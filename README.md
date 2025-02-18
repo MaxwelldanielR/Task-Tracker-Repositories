@@ -17,23 +17,13 @@
 
 ---
 
-## Capturas de pantalla 🖼️
-
-![Captura de pantalla 1](https://via.placeholder.com/600x400.png?text=Task+Tracker+UI+1)  
-*Interfaz principal de Task Tracker*
-
-![Captura de pantalla 2](https://via.placeholder.com/600x400.png?text=Task+Tracker+UI+2)  
-*Vista de edición de tareas*
-
----
 
 ## Tecnologías utilizadas 🛠️
 
-- **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Base de datos**: MongoDB
-- **Autenticación**: JWT (JSON Web Tokens)
-- **Despliegue**: Vercel (Frontend), Render (Backend)
+- **Frontend**: CLI
+- **Backend**: Laravel
+- **Base de datos**: No
+- **Despliegue**: Github
 
 ---
 
@@ -44,9 +34,10 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
 ### Requisitos previos
 
 - Node.js (v16 o superior)
-- npm o yarn
-- MongoDB (local o en la nube)
-
+- composer 
+- MySQL (local o en la nube)
+- Laravel
+- php 8.0
 ### Instalación
 
 1. Clona el repositorio:
@@ -61,11 +52,9 @@ Haz un fork del repositorio.
 
 Crea una rama con tu nueva funcionalidad:
 
-bash
 git checkout -b nueva-funcionalidad
 Realiza tus cambios y haz commit:
 
-bash
 git commit -m "Agrega nueva funcionalidad"
 Envía un pull request.
 
