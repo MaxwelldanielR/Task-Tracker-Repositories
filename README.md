@@ -1,6 +1,7 @@
 # Task Tracker 📝
 
-![Task Tracker Banner]([https://via.placeholder.com/1200x400.png?text=Task+Tracker+Banner](https://www.amitree.com/wp-content/uploads/2021/12/what-is-a-task-tracker-and-why-you-need-one.jpeg)) <!-- Puedes agregar una imagen o banner aquí -->
+![Task Tracker Banner]
+https://github.com/MaxwelldanielR/Task-Tracker-Repositories
 
 **Task Tracker** es una aplicación web intuitiva y fácil de usar para gestionar tus tareas diarias. Organiza tus actividades, establece prioridades y mantén el control de tus proyectos de manera eficiente. ¡Nunca más olvides una tarea importante!
 
