@@ -14,7 +14,7 @@ MySQL (for local database usage)
 1. Clone the Repository
 Clone this project to your local machine:
 
-git clone https://github.com/andressplaza/task-tracker.git
+git clone (https://github.com/MaxwelldanielR/Task-Tracker-Repositories.git)
 cd task-tracker
 
 
