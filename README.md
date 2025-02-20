@@ -1,76 +1,81 @@
 # Task Tracker 📝
 
-![Task Tracker Banner]
+🚀 Task Tracker CLI with Laravel
+Task Tracker CLI is a simple command-line interface (CLI) project built with Laravel to manage tasks. You can add, update, delete tasks, and manage their status (e.g., "pending", "in-progress", "completed") directly from the terminal.
+
+📋 Requirements
+Before getting started, make sure you have the following installed:
+
+PHP 8.1 or higher
+Composer (for dependency management)
+MySQL (for local database usage)
+🛠️ Getting Started
+
+1. Clone the Repository
+Clone this project to your local machine:
+
+git clone https://github.com/andressplaza/task-tracker.git
+cd task-tracker
 
 
-**Task Tracker** es una aplicación web intuitiva y fácil de usar para gestionar tus tareas diarias. Organiza tus actividades, establece prioridades y mantén el control de tus proyectos de manera eficiente. ¡Nunca más olvides una tarea importante!
+🖥️ Using the Task Tracker CLI
+After setting up the environment, you can use the following commands to manage tasks.
 
+Add a New Task
+To add a new task, run:
 
-https://roadmap.sh/projects/task-tracker
----
+php artisan app:add-task "Your task description"
 
-## Características principales ✨
+Example:
 
-- **Crear, editar y eliminar tareas**: Gestiona tus tareas de manera sencilla.
-- **Prioridades**: Asigna niveles de prioridad (alta, media, baja) a cada tarea.
-- **Fechas de vencimiento**: Establece plazos para mantenerte al día.
-- **Filtros y búsqueda**: Encuentra rápidamente las tareas que necesitas.
-- **Interfaz amigable**: Diseño moderno y responsive para una experiencia de usuario óptima.
-- **Persistencia de datos**: Tus tareas se guardan automáticamente, incluso si cierras la aplicación.
+php artisan app:add-task "Buy groceries"
 
----
+This will create a new task with the description "Buy groceries" and store it in your SQLite database.
 
+List All Tasks
+To list all tasks, run:
 
-## Tecnologías utilizadas 🛠️
+php artisan app:list-tasks
 
-- **Frontend**: CLI
-- **Backend**: Laravel
-- **Base de datos**: No
-- **Despliegue**: Github
+Update a Task Status
+To update the status of a task, use the following command:
 
----
+php artisan app:update-status {task_id} {new_status}
 
-## Cómo empezar 🚀
+Where {task_id} is the ID of the task and {new_status} can be one of the following: pending, in-progress, completed.
 
-Sigue estos pasos para configurar el proyecto en tu máquina local:
+Example:
 
-### Requisitos previos
+php artisan app:update-status 1 "completed"
 
-- Node.js (v16 o superior)
-- composer 
-- MySQL (local o en la nube)
-- Laravel
-- php 8.0
-### Instalación
+This will update the task with ID 1 to the status "completed".
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/task-tracker.git
-   cd task-tracker
+Update a Task Description
+To update a task's description, use the following command:
 
-Contribuir 🤝
-¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
+php artisan app:update-task {task_id} {new_description}
 
-Haz un fork del repositorio.
+Delete a Task
+To delete a task, run:
 
-Crea una rama con tu nueva funcionalidad:
+php artisan app:delete-task {task_id}
 
-git checkout -b nueva-funcionalidad
-Realiza tus cambios y haz commit:
+🧪 Testing the Commands
+To test that the commands are working correctly, you can run:
 
-git commit -m "Agrega nueva funcionalidad"
-Envía un pull request.
+php artisan help app:add-task
 
-Licencia 📄
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+This will show you how the command should be used.
 
-Contacto 📧
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+🌐 Roadmap
 
-Email: drenepiedra@gmail.com
+For more information on the development roadmap and upcoming features, check out our roadmap:
 
-GitHub: @MaxwelldanielR
+Task Tracker Roadmap
 
+🤝 Contributing
+If you want to contribute to this project, feel free to fork it, create a new branch, make changes, and submit a pull request. Please ensure that your code is well-tested.
 
-¡Gracias por visitar Task Tracker! Esperamos que te sea útil para organizar tus tareas de manera eficiente. 😊
+📄 License
+This project is open-source and available under the MIT License
 
